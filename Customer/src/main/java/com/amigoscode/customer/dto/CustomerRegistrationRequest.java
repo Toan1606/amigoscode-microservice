@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Getter
 public class CustomerRegistrationRequest implements Serializable {
-
+    
     @JsonProperty("first_name")
     private String firstName;
 
