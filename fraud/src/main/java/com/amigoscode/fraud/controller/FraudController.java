@@ -4,7 +4,6 @@ import com.amigoscode.fraud.dto.FraudResponse;
 import com.amigoscode.fraud.service.FraudCheckService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +20,6 @@ public class FraudController {
     @GetMapping(path = "{customerId}")
     public ResponseEntity<FraudResponse> isFraudster(@PathVariable Long customerId) {
         boolean isFraudster = fraudCheckService.isFraudulentCustomer(customerId);
-        return new ResponseEntity<FraudResponse>(FraudResponse.builder().isFraudster(isFraudster).build() , HttpStatus.OK);
+        return new ResponseEntity<>(FraudResponse.builder().isFraudster(isFraudster).build() , HttpStatus.OK);
     }
 }
