@@ -1,4 +1,4 @@
-package com.amigoscode.fraud.dto;
+package com.amigoscode.clients.dto;
 
 import lombok.Builder;
 import lombok.Getter;

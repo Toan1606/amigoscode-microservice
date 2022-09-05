@@ -12,6 +12,7 @@
         <module>Customer</module>
         <module>fraud</module>
         <module>eureka-server</module>
+        <module>clients</module>
     </modules>
 
     <name>amigosservices</name>
@@ -37,6 +38,13 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -58,10 +66,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <version>${spring.cloud-version}</version>
-            <type>pom</type>
-            <scope>import</scope>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 
