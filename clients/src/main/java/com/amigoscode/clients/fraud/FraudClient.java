@@ -1,4 +1,4 @@
-package com.amigoscode.clients;
+package com.amigoscode.clients.fraud;
 
 import com.amigoscode.clients.dto.FraudResponse;
 import org.springframework.cloud.openfeign.FeignClient;
