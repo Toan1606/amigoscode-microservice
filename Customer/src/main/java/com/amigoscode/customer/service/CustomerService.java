@@ -1,6 +1,6 @@
 package com.amigoscode.customer.service;
 
-import com.amigoscode.clients.FraudClient;
+import com.amigoscode.clients.fraud.FraudClient;
 import com.amigoscode.clients.dto.FraudResponse;
 import com.amigoscode.customer.dto.CustomerRegistrationRequest;
 import com.amigoscode.customer.model.Customer;
