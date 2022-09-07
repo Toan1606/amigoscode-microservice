@@ -1,6 +1,6 @@
 package com.amigoscode.notification.controller;
 
-import com.amigoscode.notification.dto.NotificationRequest;
+import com.amigoscode.clients.dto.NotificationRequest;
 import com.amigoscode.notification.service.NotificationService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
